@@ -1,0 +1,84 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+
+<div class="container jumbotron">
+      
+  <h5>Ingreso<br></h5>
+  <h1>Productos sin TACC</h1>
+</div>
+
+<div class=" d-flex mb-5 justify-content-center container">
+  <div><img class="" width="80px" src="{{url_for('static', filename='img/sintacc-logo.png')}}" alt=""></div>
+</div>
+
+<h4 class="text-center">Registrar nuevo producto</h4>
+<div class="alert alert-info" role="alert">
+  Por favor, registra productos que aparezcan  <a href="https://imagen.arcor.com/institucional/catalogo_celiacos_web.pdf" target="_blank">en este listado</a> 
+</div>
+
+
+<form action="/create" method="post"  enctype="multipart/form-data">
+
+
+  <div class="form-group">
+    <label for="txtRNPA">RNPA</label>
+    <input type="text" class="form-control form-control-lg" id="txtRNPA" name="txtRNPA" placeholder="RNPA">
+  </div>
+    <div class="form-group">
+      <label for="txtNombre">Nombre</label>
+      <input type="text" class="form-control form-control-lg" id="txtNombre" name="txtNombre" placeholder="Nombre del producto">
+    </div>
+
+   
+    <div class="form-group">
+      <label for="txtMarca">Marca</label>
+      <input type="text" class="form-control form-control-lg" id="txtMarca" name="txtMarca" placeholder="Marca">
+    </div>
+
+    <div class="form-group">
+      <label for="txtCategoria">Categoría</label>
+      <select class="form-control form-control-lg" name="txtCategoria" id="txtCategoria">
+        <option value="0" disabled selected>Escoger</option>
+                  <option value="Aceites">Aceites</option>
+                  <option value="Aderezos">Aderezos</option>
+                  <option value="Alimento a base de maní">Alimento a base de maní</option>
+                  <option value="Azúcar">Azúcar</option>
+                  <option value="Bombones de fruta">Bombones de fruta</option>
+                  <option value="Caramelos de goma">Caramelos de goma</option>
+                  <option value="Caramelos duros">Caramelos duros</option>
+                  <option value="Caramelos masticables">Caramelos masticables</option>
+                  <option value="Chocolates y baños de repostería">Chocolates y baños de repostería</option>
+                  <option value="Chupetines">Chupetines</option>
+                  <option value="Conservas de frutas">Conservas de frutas</option>
+                  <option value="Conservas de pescado">Conservas de pescado</option>
+                  <option value="Conservas de tomate">Conservas de tomate</option>
+                  <option value="Convervas de vegetales y legumbres">Conservas de vegetales y legumbres</option>
+                  <option value="Dulces, Jaleas, Mermeladas y confituras">Dulces, Jaleas, Mermeladas y confituras</option>
+                  <option value="Galletitas">Galletitas</option>
+                  <option value="Garrapiñadas Navidad">Garrapiñadas Navidad</option>
+                  <option value="Harinas">Harinas</option>
+                  <option value="Helados">Helados</option>
+                  <option value="Jugos y Bebidas">Jugos y Bebidas</option>
+                  <option value="Mix de frutos secos">Mix de frutos secos</option>
+                  <option value="Salsas dulces">Salsas dulces</option>
+                  <option value="Suplementos dietarios">Suplementos dietarios</option>
+                  <option value="Turrones navideños">Turrones navideños</option>
+      </select>
+    </div>
+    
+   
+
+
+  
+
+
+    <hr>
+    <input class="btn btn-outline-primary btn-lg " type="submit" value="Añadir">
+
+
+    </form>
+
+
+
+{% endblock %}

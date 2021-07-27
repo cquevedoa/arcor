@@ -1,0 +1,75 @@
+
+.container {
+    max-width: 768px;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.jumbotron { 
+background-image: url('../img/productos-sintacc.jpg');
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+height:30vh;
+}
+
+
+footer {
+    background-color: #007cc3;
+    padding: 30px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-laptop-code {
+    color: white;
+    font-size: 30px;
+}
+footer p {
+    color: white;
+}
+.btn-footer {
+    color: #007cc3;
+    text-decoration: none;
+    padding: 2px 5px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+.btn-footer:hover {
+    color: #007cc3;
+    background-color: white;
+}
+
+footer .icon {
+    width: 20%;
+}
+
+.bg-primary {
+ background-color: #007cc3!important;
+}
+.btn-outline-primary:not(.btn-search) {
+    color: #007cc3;
+    border-color: #007cc3;
+}
+.btn-outline-primary:hover {
+    background-color: #007cc3;
+    color: white;
+    border-color: #007cc3;
+}
+.btn-search {
+    background-color: none;
+    color: white;
+    border-color: white;
+}
+.btn-search:hover {
+    background-color: white;
+    color: #007cc3;
+}
